@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tongmao.mapper.ManagerMapper">
+    <select id="queryManagers" resultType="com.tongmao.pojo.Manager">
+        select username,password,registertime from managers
+    </select>
+    <select id="queryManagerByName" resultType="com.tongmao.pojo.Manager" parameterType="String">
+        select username,password,registertime from managers
+        where username=#{username}
+    </select>
+    <insert id="addManager" parameterType="com.tongmao.pojo.Manager">
+        insert into managers (`username`,`password`,`registertime`)
+        values (#{username},#{password},#{registertime})
+    </insert>
+</mapper>

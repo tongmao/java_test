@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--configuration核心配置-->
+<configuration>
+    <typeAliases>
+        <package name="com.tongmao.pojo"/>
+    </typeAliases>
+    <!--    <settings>-->
+    <!--        <setting name="" value=""/>-->
+    <!--    </settings>-->
+</configuration>

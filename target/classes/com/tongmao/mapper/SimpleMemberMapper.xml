@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tongmao.mapper.SimpleMemberMapper">
+    <select id="querySimpleMembers" resultType="com.tongmao.pojo.SimpleMember">
+        select * from simple_members;
+    </select>
+    <select id="qeurySimpleMembersByName" resultType="com.tongmao.pojo.SimpleMember" parameterType="String">
+        select * from simple_members where username like concat('%',#{str},'%');
+    </select>
+    <insert id="addSimpleMember" parameterType="com.tongmao.pojo.SimpleMember">
+        insert into simple_members (`username`,`level`) values (#{username},#{level});
+    </insert>
+    <update id="updateSimpleMember" parameterType="com.tongmao.pojo.SimpleMember">
+        update simple_members set `username`=#{username},`level`=#{level} where id=#{id};
+    </update>
+    <delete id="deleteSimpleMember" parameterType="_int">
+        delete from simple_members where id = #{id};
+    </delete>
+<!--    <select id="deleteSimpleMember" resultType="boolean">-->
+
+<!--    </select>-->
+<!--    boolean deleteSimpleMember(int id);-->
+<!--    boolean addSimpleMember(SimpleMember simpleMember);-->
+<!--    boolean updateSimpleMember(SimpleMember simpleMember,int id);-->
+</mapper>

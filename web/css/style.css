@@ -1,0 +1,77 @@
+#index-content{
+    background-image: url("../img/d42dee71-482a-4c46-8be3-8ce5b6556ab5.jpg");
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+#index-content>div{
+    height: 100%;
+    width: 100%;
+}
+.index-nav{
+    font-size: large;
+}
+#index-login-block>div{
+    margin:10vh;
+    background-color: rgba(33,33,33,0.4);
+}
+#index-login-block>div>form p{
+    margin:10px 70px 10px 70px;
+}
+#index-login-block input{
+    background-color: transparent;
+    border:0;
+    color: black;
+    outline: none;
+}
+#index-login-block input::-webkit-input-placeholder{
+    color:whitesmoke;
+}
+
+/* 注册界面 */
+#register-tipfont-key{
+    position: absolute;
+    top:32%;
+    right:42%
+}
+#register-tip-key{
+    position: absolute;
+    width: 150px;
+    top: 28%;
+    right: 32%;
+    padding: 10px;
+    border-radius: 20%;
+    background-color: aquamarine;
+}
+#register-tipcaret-key{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border:20px solid transparent;
+    border-right: 20px solid aquamarine;
+    top:32%;
+    right:40%;
+}
+
+
+/* 工具样式 */
+.font-black-small{
+    font-size: small;
+}
+.linear-font{
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+}
+.border-gary-bottom{
+    border-bottom:1px gray solid;
+}
+.border-black-bottom{
+    border-bottom: black 1px solid;
+}
+.margin-top{
+    margin-top: 5vh !important;
+}
+.margin-bottom{
+    margin-bottom: 5vh !important;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录-会员管理系统</title>
+    <link rel="stylesheet" href="./bootstrap4/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="margin-bottom container">
+        <nav class="index-nav border-gary-bottom user-select-none">
+            <h3><span class="linear-font">会员管理系统</span></h3>
+        </nav>
+    </header>
+
+    <div id="index-content" class="margin-bottom">
+        <div class="row">
+            <div id="index-login-block" class="col-lg-4 offset-lg-6 ">
+                <div>
+                    <h2 class="text-center margin-bottom user-select-none">登录</h2>
+                    <form>
+                        <p class="text-center border-black-bottom">
+                            <input type="text" placeholder="请输入用户名" id="index-input-username"> 
+                        </p>
+                        <p class="text-center border-black-bottom">
+                            <input type="password" placeholder="请输入密码" id="index-input-pwd">
+                        </p>
+                        <p>
+                            <label class="user-select-none">
+                                <input type="checkbox" id="index-input-checkbox">
+                                <span class="font-black-small">三天内记住我</span>
+                            </label>
+                            
+                        </p>
+                        <p class="text-center margin-bottom">
+                            <button type="button" class="btn btn-block btn-outline-primary" id="index-input-btn">登录</button> 
+                        </p>
+                    </form>
+                    <div class="alert alert-danger" role="alert" id="index-wranning-block"></div>
+                    <p class="text-right font-black-small user-select-none"><a href="/registerWindows.html" target="_blank">没有账号？前往注册</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="margin-top">
+        <p class="text-center user-select-none">版权所有 &copy; | JSU</p>
+    </footer>
+    <script src="./jquery/dist/jquery.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

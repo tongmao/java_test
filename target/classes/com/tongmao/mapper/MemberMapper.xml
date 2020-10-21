@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tongmao.mapper.MemberMapper">
+    <select id="queryMember" resultType="com.tongmao.pojo.Member" parameterType="_int">
+        select * from members where `id` = #{id};
+    </select>
+    <insert id="addMember" parameterType="com.tongmao.pojo.Member">
+        insert into members (`username`,`level`,`name`,`age`,`tel`,endtime,email,address)
+        values(#{username},#{level},#{name},#{age},#{tel},#{endtime},#{email},#{address});
+    </insert>
+    <update id="updateMembr" parameterType="com.tongmao.pojo.Member">
+        update members
+        set `username`=#{username},`level`=#{level},`name`=#{name},`age`=#{age},`tel`=#{tel},endtime=#{endtime},email=#{email},address=#{address}
+        where `id`=#{id};
+    </update>
+    <delete id="deleteMember" parameterType="_int">
+        delete from members where `id`= #{id};
+    </delete>
+</mapper>

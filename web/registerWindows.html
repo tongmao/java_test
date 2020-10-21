@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册-会员管理系统</title>
+    <link rel="stylesheet" href="./bootstrap4/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="margin-bottom container">
+        <nav class="border-gary-bottom user-select-none">
+            <h3><span class="linear-font">会员管理系统</span></h3>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- 警告框 -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" id="register-wranning-block">
+            <strong>提交失败!</strong><span>输入信息有误，请重试</span>
+            
+        </div>
+        <!--  -->
+        <div class="text-center margin-bottom"><h2>用户注册</h2></div>
+        <form class="text-center">
+            <p>
+              <input type="text" placeholder="请输入用户名" id="register-input-username">  
+            </p>
+            <p>
+               <input type="password" placeholder="请输入密码" id="register-input-pwd"> 
+            </p>
+            <p>
+                <input type="text" placeholder="请输入授权码" id="register-input-key">
+                <p class="user-select-none">
+                    <span id="register-tipfont-key">[?]</span>
+                    <div id="register-tipcaret-key"></div>
+                    <span id="register-tip-key">授权码是系统管理员设置的注册码，详情请咨询管理人员</span>
+                </p>
+            </p>
+            
+            <button id="register-input-btn" type="button">提交</button>
+        </form>
+        
+    </div>
+    <footer class="margin-top">
+        <p class="text-center">版权所有 &copy; | JSU</p>
+    </footer>
+    <script src="./jquery/dist/jquery.min.js"></script>
+    <script src="./bootstrap4/dist/js/bootstrap.min.js"></script>
+    <script src="./js/register.js" type="module"></script>
+</body>
+</html>
